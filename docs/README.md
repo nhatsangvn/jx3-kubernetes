@@ -32,14 +32,14 @@
     <tr>
 	      <td>jx-preview</td>
 	      <td title='This chart installs the jx-preview CRD and garbagecollection job '><a href='https://github.com/jenkins-x-plugins/jx-preview'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview</a></td>
-	      <td>0.0.240</td>
+	      <td>0.1.0</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
 	      <td>lighthouse</td>
 	      <td title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '><a href='https://github.com/jenkins-x/lighthouse'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse</a></td>
-	      <td>1.11.12</td>
+	      <td>1.12.1</td>
 	      <td></td>
 	      <td></td>
 	    </tr>

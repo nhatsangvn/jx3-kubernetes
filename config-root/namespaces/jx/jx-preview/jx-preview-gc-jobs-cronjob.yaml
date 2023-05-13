@@ -1,5 +1,5 @@
 # Source: jx-preview/templates/gc-jobs-cj.yaml
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: jx-preview-gc-jobs
@@ -31,7 +31,7 @@ spec:
             env:
             - name: XDG_CONFIG_HOME
               value: /home
-            image: ghcr.io/jenkins-x-plugins/jx-preview:0.0.240
+            image: ghcr.io/jenkins-x-plugins/jx-preview:0.1.0
             imagePullPolicy: IfNotPresent
             name: jx-preview-gc-jobs
             resources: {}

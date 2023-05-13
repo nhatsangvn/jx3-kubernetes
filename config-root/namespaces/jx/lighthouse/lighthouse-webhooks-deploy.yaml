@@ -4,12 +4,12 @@ kind: Deployment
 metadata:
   name: lighthouse-webhooks
   labels:
-    chart: "lighthouse-1.11.12"
+    chart: "lighthouse-1.12.1"
     app: lighthouse-webhooks
     git.jenkins-x.io/sha: annotate
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    checksum/config: ac740e2d71e829938ceae9fb227fcc7b4d0afc6e68ee6c20659b50aef50765cf
+    checksum/config: 63893203649d0670d17c21050c2649ab7ad2f0bf699b41e52ae06dcfa175101e
     meta.helm.sh/release-name: 'lighthouse'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
@@ -30,7 +30,7 @@ spec:
       serviceAccountName: lighthouse-webhooks
       containers:
       - name: lighthouse-webhooks
-        image: ghcr.io/jenkins-x/lighthouse-webhooks:1.11.12
+        image: ghcr.io/jenkins-x/lighthouse-webhooks:1.12.1
         imagePullPolicy: IfNotPresent
         args:
         - "--namespace=jx"
@@ -62,7 +62,7 @@ spec:
         - name: LOG_LEVEL
           value: "info"
         - name: LOGRUS_SERVICE_VERSION
-          value: "1.11.12"
+          value: "1.12.1"
         - name: LOGRUS_STACK_SKIP
           value: ""
         - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT

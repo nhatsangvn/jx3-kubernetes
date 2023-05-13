@@ -1,5 +1,5 @@
 # Source: lighthouse/templates/gc-jobs-cj.yaml
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: lighthouse-gc-jobs
@@ -24,7 +24,7 @@ spec:
           containers:
           - command:
             - /home/jx/gc-jobs
-            image: ghcr.io/jenkins-x/lighthouse-gc-jobs:1.11.12
+            image: ghcr.io/jenkins-x/lighthouse-gc-jobs:1.12.1
             imagePullPolicy: IfNotPresent
             args:
             - "--namespace=jx"
