@@ -20,7 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "jenkinx.21.sohan.cloud"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
